@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APE GAMBLES — Big Wins. Bigger Degens.</title>
+  <meta name="description" content="Ape Gambles — Big Wins, Bigger Degens, Daily Giveaways. Watch live on Kick, join the community.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Scrolling Ticker -->
+  <div class="ticker" id="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">🎰 Player_X won $12,450 on Gates of Olympus</span>
+      <span class="ticker-item">🔥 Degen_Mike hit 500x on Wanted Dead or a Wild</span>
+      <span class="ticker-item">💰 ApeArmy_22 cashed out $8,900</span>
+      <span class="ticker-item">🎰 Lucky_Ape won $25,000 on Sweet Bonanza</span>
+      <span class="ticker-item">🔥 Big_Send_Bob hit 1000x on Fruit Party</span>
+      <span class="ticker-item">💰 Diamond_Hands withdrew $15,300</span>
+      <span class="ticker-item">🎰 Moon_Shot won $6,780 on Sugar Rush</span>
+      <span class="ticker-item">🔥 YOLO_King hit 750x on The Dog House</span>
+      <span class="ticker-item">🎰 Player_X won $12,450 on Gates of Olympus</span>
+      <span class="ticker-item">🔥 Degen_Mike hit 500x on Wanted Dead or a Wild</span>
+      <span class="ticker-item">💰 ApeArmy_22 cashed out $8,900</span>
+      <span class="ticker-item">🎰 Lucky_Ape won $25,000 on Sweet Bonanza</span>
+      <span class="ticker-item">🔥 Big_Send_Bob hit 1000x on Fruit Party</span>
+      <span class="ticker-item">💰 Diamond_Hands withdrew $15,300</span>
+      <span class="ticker-item">🎰 Moon_Shot won $6,780 on Sugar Rush</span>
+      <span class="ticker-item">🔥 YOLO_King hit 750x on The Dog House</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">APE<span>GAMBLES</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#leaderboard">Leaderboard</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#watch-live">Watch Live</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+        <svg class="sound-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        <svg class="sound-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-title-ape">APE</span>
+        <span class="hero-title-gambles">GAMBLES</span>
+      </h1>
+      <p class="hero-subtitle">Big Wins. Bigger Degens. Daily Giveaways.</p>
+      <div class="hero-counters">
+        <div class="counter-item">
+          <span class="counter-value" data-target="2450000">0</span>
+          <span class="counter-label">Total Wagered</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" data-target="18750">0</span>
+          <span class="counter-label">Biggest Win</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-value" data-target="342">0</span>
+          <span class="counter-label">Giveaways</span>
+        </div>
+      </div>
+      <a href="https://t.me/ApeLivesHere" target="_blank" rel="noopener" class="btn btn-primary btn-glow">
+        Join Giveaways
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Leaderboard Section -->
+  <section class="section" id="leaderboard">
+    <div class="container">
+      <h2 class="section-title">Leaderboard</h2>
+      <p class="section-subtitle">Top degens of the month</p>
+      <div class="leaderboard-table">
+        <div class="lb-header">
+          <span class="lb-rank">Rank</span>
+          <span class="lb-user">Username</span>
+          <span class="lb-profit">Profit</span>
+          <span class="lb-wager">Wager</span>
+        </div>
+        <div class="lb-row gold">
+          <span class="lb-rank">1</span>
+          <span class="lb-user">DiamondApe_1</span>
+          <span class="lb-profit profit-positive">+$24,500</span>
+          <span class="lb-wager">$185,000</span>
+        </div>
+        <div class="lb-row silver">
+          <span class="lb-rank">2</span>
+          <span class="lb-user">DegenKing99</span>
+          <span class="lb-profit profit-positive">+$18,200</span>
+          <span class="lb-wager">$142,000</span>
+        </div>
+        <div class="lb-row bronze">
+          <span class="lb-rank">3</span>
+          <span class="lb-user">MoonShotMike</span>
+          <span class="lb-profit profit-positive">+$15,800</span>
+          <span class="lb-wager">$120,500</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">4</span>
+          <span class="lb-user">SlotMaster_X</span>
+          <span class="lb-profit profit-positive">+$12,100</span>
+          <span class="lb-wager">$98,000</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">5</span>
+          <span class="lb-user">YOLOQueen</span>
+          <span class="lb-profit profit-positive">+$9,450</span>
+          <span class="lb-wager">$87,500</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">6</span>
+          <span class="lb-user">CryptoApe42</span>
+          <span class="lb-profit profit-positive">+$7,300</span>
+          <span class="lb-wager">$65,200</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">7</span>
+          <span class="lb-user">LuckySeven_7</span>
+          <span class="lb-profit profit-positive">+$5,600</span>
+          <span class="lb-wager">$54,800</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">8</span>
+          <span class="lb-user">BigSendBob</span>
+          <span class="lb-profit profit-negative">-$2,100</span>
+          <span class="lb-wager">$48,000</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">9</span>
+          <span class="lb-user">NightOwl_Bet</span>
+          <span class="lb-profit profit-negative">-$4,500</span>
+          <span class="lb-wager">$42,300</span>
+        </div>
+        <div class="lb-row">
+          <span class="lb-rank">10</span>
+          <span class="lb-user">ReloadRick</span>
+          <span class="lb-profit profit-negative">-$8,200</span>
+          <span class="lb-wager">$38,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section class="section section-alt" id="videos">
+    <div class="container">
+      <h2 class="section-title">Videos</h2>
+      <p class="section-subtitle">Latest clips and highlights</p>
+      <div class="video-grid">
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">12:34</span>
+          </div>
+          <div class="video-info">
+            <h3>INSANE 1000x Win on Gates of Olympus!</h3>
+            <p>45K views &bull; 2 days ago</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">8:21</span>
+          </div>
+          <div class="video-info">
+            <h3>$50,000 Bonus Hunt — Best Session EVER</h3>
+            <p>32K views &bull; 5 days ago</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">15:07</span>
+          </div>
+          <div class="video-info">
+            <h3>Sweet Bonanza Max Win Attempt!</h3>
+            <p>28K views &bull; 1 week ago</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">22:45</span>
+          </div>
+          <div class="video-info">
+            <h3>$10,000 Giveaway Highlights</h3>
+            <p>52K views &bull; 1 week ago</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">18:30</span>
+          </div>
+          <div class="video-info">
+            <h3>Wanted Dead or a Wild — 500x BANGER</h3>
+            <p>19K views &bull; 2 weeks ago</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="video-card">
+          <div class="video-thumb">
+            <div class="video-thumb-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-duration">10:12</span>
+          </div>
+          <div class="video-info">
+            <h3>Community Roulette Night — Chaos Mode</h3>
+            <p>14K views &bull; 2 weeks ago</p>
+          </div>
+        </a>
+      </div>
+      <div class="section-cta">
+        <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener" class="btn btn-outline">
+          View All Videos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Live Section -->
+  <section class="section" id="watch-live">
+    <div class="container">
+      <h2 class="section-title">Watch Live</h2>
+      <p class="section-subtitle">Catch the streams on Kick</p>
+      <div class="live-container">
+        <div class="live-preview">
+          <div class="live-offline">
+            <div class="live-offline-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="2"/></svg>
+            </div>
+            <h3>Currently Offline</h3>
+            <p>Follow to get notified when Ape goes live!</p>
+          </div>
+          <div class="live-badge" id="liveBadge" style="display:none;">
+            <span class="live-dot"></span> LIVE
+          </div>
+        </div>
+        <div class="live-actions">
+          <a href="https://kick.com/apelive" target="_blank" rel="noopener" class="btn btn-primary btn-kick">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Watch on Kick
+          </a>
+          <a href="https://kick.com/apelive" target="_blank" rel="noopener" class="btn btn-outline">
+            Follow Channel
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="section section-alt" id="community">
+    <div class="container">
+      <h2 class="section-title">Community</h2>
+      <p class="section-subtitle">Join the Ape Army</p>
+      <div class="community-grid">
+        <a href="https://discord.com/invite/netx" target="_blank" rel="noopener" class="community-card discord-card">
+          <div class="community-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+          </div>
+          <h3>Discord</h3>
+          <p>Chat with the community, share wins, and join events.</p>
+          <span class="community-btn">Join Discord</span>
+        </a>
+        <a href="https://t.me/ApeLivesHere" target="_blank" rel="noopener" class="community-card telegram-card">
+          <div class="community-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </div>
+          <h3>Telegram</h3>
+          <p>Get instant updates, giveaway alerts, and exclusive drops.</p>
+          <span class="community-btn">Join Telegram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Get in touch</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="https://t.me/ApeLivesHere" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </div>
+            <div>
+              <strong>Telegram</strong>
+              <p>@ApeLivesHere</p>
+            </div>
+          </a>
+          <a href="mailto:ApeLiveOnKick@Gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p>ApeLiveOnKick@Gmail.com</p>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">APE<span>GAMBLES</span></div>
+        <div class="footer-links">
+          <a href="https://www.youtube.com/@ApeGambles" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://kick.com/apelive" target="_blank" rel="noopener">Kick</a>
+          <a href="https://discord.com/invite/netx" target="_blank" rel="noopener">Discord</a>
+          <a href="https://t.me/ApeLivesHere" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Ape Gambles. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
